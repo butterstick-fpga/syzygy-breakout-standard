@@ -1,0 +1,25 @@
+"Source:","/home/greg/Projects/butterstick-fpga/syzygy-breakout-standard/syzygy-breakout-r1.0/kicad-src/syzygy-breakout.kicad_sch"
+"Date:","Tue 21 Sep 2021 11:58:37"
+"Tool:","Eeschema 5.99.0-unknown-34c2bd58d1~131~ubuntu21.04.1"
+"Generator:","/usr/share/kicad-nightly/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","5"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Mfg","PN"
+"","","C9","0.1uF","Device:C","Capacitor_SMD:C_0402_1005Metric","","Samsung Electro-Mechanics","CL05B104KP5NNNC"
+"","","C10","1uF","Device:C","Capacitor_SMD:C_0402_1005Metric","","Samsung Electro-Mechanics","CL05A105KP5NNNC"
+"","","J1","SYZYGY-STD","gsd-kicad:SYZYGY-STD","gsd-footprints:SYZYGY-STD-POD","","Samtec Inc.","QTE-020-01-F-D-A-K-TR"
+"","","R15","10K","Device:R","Resistor_SMD:R_0402_1005Metric","","Stackpole Electronics Inc","RMCF0402FT10K0"
+"","","U2","ATtiny44A-MMH","SyzygyLVDSPod-rescue:ATtiny44A-MMH-MCU_Microchip_ATtiny","Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.45mm_EP1.6x1.6mm","http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf","Microchip Technology","ATTINY44A-MMH"
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Mfg","PN"
+"1","1","C9","0.1uF","Device:C","Capacitor_SMD:C_0402_1005Metric","","Samsung Electro-Mechanics","CL05B104KP5NNNC"
+"2","1","C10","1uF","Device:C","Capacitor_SMD:C_0402_1005Metric","","Samsung Electro-Mechanics","CL05A105KP5NNNC"
+"3","1","J1","SYZYGY-STD","gsd-kicad:SYZYGY-STD","gsd-footprints:SYZYGY-STD-POD","","Samtec Inc.","QTE-020-01-F-D-A-K-TR"
+"4","1","R15","10K","Device:R","Resistor_SMD:R_0402_1005Metric","","Stackpole Electronics Inc","RMCF0402FT10K0"
+"5","1","U2","ATtiny44A-MMH","SyzygyLVDSPod-rescue:ATtiny44A-MMH-MCU_Microchip_ATtiny","Package_DFN_QFN:QFN-20-1EP_3x3mm_P0.45mm_EP1.6x1.6mm","http://ww1.microchip.com/downloads/en/DeviceDoc/doc8183.pdf","Microchip Technology","ATTINY44A-MMH"
