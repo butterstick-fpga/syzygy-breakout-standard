@@ -15,9 +15,7 @@ SYZYGY is an FPGA expansion standard for medium to high speed interfaces. Learn 
 
 ## Photos
 
-|                           Front                                    |                                 Back                             |
-|--------------------------------------------------------------------|------------------------------------------------------------------|
-| ![Front](syzygy-breakout-r1.0/docs/syzygy-breakout-r1.0-front.jpg) | ![Back](syzygy-breakout-r1.0/docs/syzygy-breakout-r1.0-back.jpg) |
+![Front](syzygy-breakout-r1.0/docs/syzygy-breakout-r1.0-front.jpg) ![Back](syzygy-breakout-r1.0/docs/syzygy-breakout-r1.0-back.jpg)
 
 ## Prototyping area
 
