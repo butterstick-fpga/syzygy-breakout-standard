@@ -21,6 +21,6 @@ production:
  - Board render: [project].png
 ```
 
-## Render
+## Photos
 
-![Render](production/syzygy-breakout.jpg "Render")
+![Front](docs/syzygy-breakout-r1.0-front.jpg) ![Back](docs/syzygy-breakout-r1.0-back.jpg)
