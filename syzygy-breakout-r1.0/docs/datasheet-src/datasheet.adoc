@@ -1,0 +1,163 @@
+= SYZYGY Pod
+:imagesdir: ../images
+:source-highlighter: rouge
+:bl: pass:[ +]
+:toc: macro
+:icons: font
+
+_Standard Breakout_
+
+'''
+
+== General Description
+The SYZYGY Standard Breakout is an addon board for carriers following the SYZYGY FPGA standard.
+
+The POD features the SYZYGY Stardard connector that enables 32 single ended I/O or 10 differential pairs. It also features a small ATTiny44 microcontroller, that can be used to implement SYZYGY-DNA features.
+
+All SYZYGY I/O signals are routed into a 0.1" labeled dual-row header, From here connections can be made directly or jumped over onto the prototyping area on the PCB. Breakouts are also offered for the ATTiny ICSP interface, and voltages from the carrier.
+
+
+'''
+
+[cols=2,frame=none,grid=none]
+|===
+a|
+[#_anchor]
+== Key features:
+  * Compact Size
+  * All I/O broken out
+  * Universial prototyping area
+
+image:syzygy-breakout-r1.0-front-2.jpg[SYZYGY Breakout Front]
+
+a|
+== Specifications:
+  * All 32 SYZYGY-STD I/O broken out
+  * All power rail broken out
+  * Multiple power configurations
+  * SYZYGY-DNA I2C bus accessable
+  * Lots of prototyping space
+  * Open source KiCad Design
+  * Dimensions: 45.0mm x 70.0mm (1.8" x 2.8")
+|===
+
+{bl}
+{bl}
+
+== Product Variants
+
+[cols="1,2",frame=ends, grid=cols]
+|===
+|Part Number|Description
+
+|SYZYGY-STD-R1D0
+|Populated PCBA, unprogrammed.
+
+|SYZYGY-STD-R1D0-BARE
+|Bare PCB
+
+|===
+
+<<<
+
+== Licence
+ - Hardware: https://spdx.org/licenses/CERN-OHL-P-2.0.html[CERN-OHL-P-2.0]
+ - Documentation: https://spdx.org/licenses/CC-BY-SA-4.0.html[CC-BY-SA-4.0]
+
+{bl}
+{bl}
+
+== Revision History
+
+[cols="^1,^1,6",frame=ends, grid=cols]
+|===
+|Revision|Date|Description
+
+|r1d0|2021-12-12|Initial Release
+
+|===
+
+
+{bl}
+{bl}
+
+toc::[]
+
+<<<
+
+== Images
+
+.Top of PCB
+image::syzygy-breakout-r1.0-front-1.jpg[SYZYGY Breakout Front,pdfwidth=80%,align="center"]
+
+.Bottom Of PCB 
+image::syzygy-breakout-r1.0-back-1.jpg[[SYZYGY Breakout Back,pdfwidth=80%,align="center"]
+
+
+<<<
+
+{bl}
+
+== Pinout
+
+[cols="^1,2,^1,2",width=50%,align=center,frame=all, grid=cols, stripes=even]
+|===
+|Pin|Signal Name|Pin|Signal Name
+
+|`1`  | `S0 D0p`  |  `2`  | `S1 D1p`
+|`3`  | `S2 D0n`  |  `4`  | `S3 D1n`
+|`5`  | `S4 D2p`  |  `6`  | `S5 D3p`
+|`7`  | `S6 D2n`  |  `8`  | `S7 D3n`
+|`9`  | `S8 D4p`  |  `10` | `S9 D5p`
+|`11` | `S10 D4n` |  `12` | `S11 D5n` 
+|`13` | `S12 D6p` |  `14` | `S13 D7p` 
+|`15` | `S14 D6n` |  `16` | `S15 D7n` 
+|`17` | `S16`     |  `18` | `S17` 
+|`19` | `S18`     |  `20` | `S19` 
+|`21` | `S20`     |  `22` | `S21` 
+|`23` | `S22`     |  `24` | `S23` 
+|`25` | `S24`     |  `26` | `S25` 
+|`27` | `S26`     |  `28` | `S27` 
+|`29` | `P2C CLKp` |  `30` | `C2P CLKp` 
+|`31` | `P2C CLKn` |  `32` | `C2P CLKn` 
+|===
+
+{bl}
+
+.Signal Descriptions
+[cols="^1,^1,4",frame=all, grid=cols, stripes=even,separator=%]
+|===
+%Signal Name % Direction % Description
+
+%D[0,2,4,6]{P|N}  % Input  % Differential I/O
+%D[1,3,5,7]{P|N}  % Output % Differential I/O
+%S[27:0]      % BIDIR  % Single-ended I/O
+%P2C_CLK{P|N} % P2C    % Differential clock pair provided by pod to carrier. Where possible, these signals should connect to a dedicated clock input on the host.
+%C2P_CLK{P|N} % C2P    % Differential clock pair provided by carrier to pod
+|===
+
+<<<
+
+
+== SYZYGY DNA
+
+The embedded ATTiny44a can be used to implement the SYZYGY-DNA feature of the specification. A through hole footprint is provided to facilitate programming and debug.
+
+.SYZYGY-DNA program/debug connector
+[cols="^1,2,^1,2",width=50%,frame=all, grid=cols, stripes=even]
+|===
+|Pin|Signal Name|Pin|Signal Name
+
+|`1`  | `CIPO`       |  `2`  | `3v3`
+|`3`  | `CLK / SCL`  |  `4`  | `COPI / SDA`
+|`5`  | `nRST`       |  `6`  | `GND`
+|===
+
+== Prototyping area
+
+[TIP]
+Prototyping areas is connected together in an arrangement much like a typical breadboard, a sharp exacto/scapel can be used to cut connection from the back of the PCB
+
+<<<
+
+image::../../production/syzygy-breakout.pdf[pages=1..2]

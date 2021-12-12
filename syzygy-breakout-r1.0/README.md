@@ -23,4 +23,4 @@ production:
 
 ## Photos
 
-![Front](docs/syzygy-breakout-r1.0-front.jpg) ![Back](docs/syzygy-breakout-r1.0-back.jpg)
+![Front](docs/images/syzygy-breakout-r1.0-front.jpg) ![Back](docs/images/syzygy-breakout-r1.0-back.jpg)
